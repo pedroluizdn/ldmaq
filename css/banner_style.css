@@ -1,0 +1,149 @@
+.bg-ban {
+  background: rgb(26,73,112);
+  border-radius: 5px;
+  box-shadow: 5px 5px 14px black;
+  padding: 1em;
+  padding-bottom: 0.4em;}
+
+.banner {
+  margin: 0 auto;
+  background: white;
+  position: relative;}
+  
+@media only screen and (max-width: 40em) {
+  
+.next, .prev {
+  display: none;}
+  
+}
+  
+.prev {
+  background-image: url(icons.png);
+  background-position: 0 0;
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  height: 68px;
+  width: 68px;
+  z-index: 20;
+  opacity: 0.5;
+  transition: opacity 0.2s linear 0s;}
+  
+  .prev:hover {
+    opacity: 1;
+	transition: opacity 0.2s linear 0s;
+	cursor: pointer;}
+	
+.next {
+  background-image: url(icons.png);
+  background-position: 140px 0;
+  position: absolute;
+  right: 4%;
+  top: 40%;
+  height: 68px;
+  width: 68px;
+  z-index: 20;
+  opacity: 0.5;}
+  
+  .next:hover {
+    opacity: 1;
+	cursor: pointer;}
+
+  
+.img-ban {
+  position: absolute;
+  background: white;
+  top:0;
+  bottom:0;
+  height: 100%;
+  left:0;
+  right:0;}
+
+.img-ban.visible {
+  opacity: 1;
+  transition: opacity 0.5s linear 0s;}
+
+.img-ban.hidden {
+  opacity: 0;
+  animation: removeopacity 0.5s linear 0s;}
+  
+@media only screen and (max-width: 20em) {
+
+.banner {
+  height: 8em;}
+  
+} 
+
+@media only screen and (min-width: 20em) {
+
+.banner {
+  height: 12em;}
+  
+} 
+
+@media only screen and (min-width: 65em) {
+
+.banner {
+  height: 16em;}
+  
+} 
+
+@media only screen and (min-width: 80em) {
+
+.banner {
+  height: 18em;}
+  
+} 
+
+.img-ban img {
+   width: 60%;
+   position: absolute;
+   height: 100%;
+   left: 20%;
+   right: 20%;
+   z-index: 10;}
+   
+.img-ban .description {
+  background: rgba(0,0,0,0.6);
+  z-index: 15;
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  font-size: 0.8em;}
+  
+  .img-ban .description p {
+    padding: 1em;
+	color: white;}
+   
+.btns-ban {
+  text-align: center;
+  padding-top: 0.4em;}
+
+.btns-ban span.selected {
+  background: orange;}
+ 
+  .btns-ban span {
+    background: cyan;
+	display: inline-block;
+	margin: 0 0.2em;
+    padding: 0.3em;
+    border-radius: 2px;}
+  .btns-ban span:hover {
+    cursor: pointer;
+	transition: background 0.14s linear 0s;
+	background: red;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
