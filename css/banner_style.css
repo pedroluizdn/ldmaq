@@ -1,3 +1,13 @@
+@media only screen and (min-width: 40em) {
+
+.wrap-banner {
+  background-image: url(motor_v8.jpg), url(range_rover_sport.jpg);
+  background-position: 0 0, 100% 0;
+  background-size: auto 100%, auto 100%;
+  background-repeat: no-repeat, no-repeat;}
+
+}
+  
 .bg-ban {
   background: rgb(26,73,112);
   border-radius: 5px;
@@ -43,10 +53,12 @@
   height: 68px;
   width: 68px;
   z-index: 20;
+  transition: opacity 0.2s linear 0s;
   opacity: 0.5;}
   
   .next:hover {
     opacity: 1;
+	transition: opacity 0.2s linear 0s;
 	cursor: pointer;}
 
   
@@ -103,7 +115,7 @@
    right: 20%;
    z-index: 10;}
    
-.img-ban .description {
+.description {
   background: rgba(0,0,0,0.6);
   z-index: 15;
   position: absolute;
@@ -111,8 +123,8 @@
   right:0;
   bottom:0;
   font-size: 0.8em;}
-  
-  .img-ban .description p {
+
+.description p {
     padding: 1em;
 	color: white;}
    

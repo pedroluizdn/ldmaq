@@ -2,10 +2,14 @@
   font-size: 1em;
   margin:0;
   padding:0;
-  font-family: "Open Sans", sans-serif;;}
+  font-family: sans-serif;}
 
 ul li {
   list-style: none;}
+  
+strong {
+  font-weight: normal;
+  font-family: serif;}
   
 body {
   background: rgb(56,103,142);}
@@ -13,13 +17,26 @@ body {
 body > * {
   background: transparent;}
 
-@media only screen and (min-width: 40em) {
+.top {
+  background: rgb(46,93,132);
+  padding: 1em 0;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  color: rgb(200,200,200);
+  text-align: left;}
   
-header {
-  border-top: 4em solid rgb(46,93,132);}
+  .top h1 {}
+  
+  .top span {
+    padding: 1em 0;}
+  
+@media only screen and (max-width: 40em) {
+
+.top {
+  display: none;}
   
 }
-  
+ 
 .empresa {
   text-align: center;
   padding: 2em 0;}  
@@ -124,9 +141,38 @@ header {
   
 }  
 	
-section, footer {
-  margin: 1em;
-  font-size: 1.4em;} 
+section, .rodape {
+  font-size: 1.2em;} 
+
+.section {
+  background: rgba(0,0,0,0.45);
+  padding: 2em;
+  margin-top: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 8px black;
+  color: rgb(200,200,200);}
+ 
+  .section p, .section address {
+    font-family: Times;}
+  
+  .section h3, .section h4 {
+    font-family: Times;
+    color: cyan;
+	margin: 1em 0;
+	font-size: 1.2em;
+	border-bottom: 1px solid red;}
+  
+  .section ul li {
+    font-family: Times;
+	margin: 0.4em 0;
+	list-style: url(green_tick.png)}	
+
+.rodape {
+  background: rgb(10,10,10);
+  color: white;
+  padding-bottom: 3em;
+  text-align: right;
+  font-size: 0.8em;}
   
 /* --------- Estilos para tela média ----------- */
 
@@ -147,6 +193,17 @@ section, footer {
     .navegacao ul li a:link {
 	  width: 100%;
       padding: 0.9em 0;}
+
+section, footer {
+  margin: 1em;}	  
+	  
+.section p, .section address {
+  margin: 1em 3em 1em 0;} 
+
+.section ul li {
+  margin-left: 4em;}  
+
+  
 }
   
   
